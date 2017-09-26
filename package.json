@@ -1,0 +1,20 @@
+{
+  "name": "prueba-scapegoat",
+  "version": "1.0.0",
+  "description": "Testing a published module",
+  "main": "index.js",
+  "scripts": {
+    "test": "rm -f salida.txt; (npm i && node main.js | tee salida.txt) && (diff salida.txt expected.txt && echo 'OK!') || echo 'NOT OK' ",
+    "clean": "rm -f salida.txt"
+  },
+  "keywords": [
+    "npm",
+    "packages",
+    "test"
+  ],
+  "author": "Casiano Rodriguez-Leon <casiano.rodriguez.leon@gmail.com> (https://github.com/crguezl)",
+  "license": "ISC",
+  "dependencies": {
+    "@ull-esit-dsi-1617/scapegoat": "latest"
+  }
+}
