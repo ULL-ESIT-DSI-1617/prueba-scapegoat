@@ -7,7 +7,7 @@
     "test": "rm -f salida.txt; (npm i --no-save --no-package-lock && node main.js | tee salida.txt) && (diff salida.txt expected.txt && echo 'OK!') || echo 'NOT OK' ",
     "clean": "rm -fR salida.txt node_modules/ package-lock.json",
     "version": "rm -f package-lock.json; npm la  '@ull-esit-dsi-1617/scapegoat'",
-    "update": "rm -f package-lock.json; npm update @ull-esit-dsi-1617/scapegoat"
+    "update": "rm -f package-lock.json; npm update --no-save @ull-esit-dsi-1617/scapegoat"
   },
   "keywords": [
     "npm",
