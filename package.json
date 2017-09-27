@@ -4,9 +4,10 @@
   "description": "Testing a published module",
   "main": "index.js",
   "scripts": {
-    "test": "rm -f salida.txt; (npm i && node main.js | tee salida.txt) && (diff salida.txt expected.txt && echo 'OK!') || echo 'NOT OK' ",
+    "test": "rm -f salida.txt; (npm i --no-save && node main.js | tee salida.txt) && (diff salida.txt expected.txt && echo 'OK!') || echo 'NOT OK' ",
     "clean": "rm -fR salida.txt node_modules/ package-lock.json",
-    "version": "npm la  '@ull-esit-dsi-1617/scapegoat'"
+    "version": "npm la  '@ull-esit-dsi-1617/scapegoat'",
+    "update": "npm update \@ull-esit-dsi-1617/scapegoat"
   },
   "keywords": [
     "npm",
