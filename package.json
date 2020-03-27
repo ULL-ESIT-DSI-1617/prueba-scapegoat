@@ -4,7 +4,7 @@
   "description": "Testing a published module",
   "main": "index.js",
   "scripts": {
-    "test": "pm run clean; npm i --no-save && mocha",
+    "test": "npm run clean; npm i --no-save && mocha",
     "clean": "rm -fR node_modules package-lock.json"
   },
   "keywords": [
