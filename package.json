@@ -11,7 +11,17 @@
     "update": "npm i --no-save @ull-esit-dsi-1617/scapegoat@latest",
     "version": "npm list --depth=0"
   },
-  "keywords": [ "ULL", "npm", "packages", "test", "git-submodules" ],
+  "keywords": [
+    "ULL",
+    "npm",
+    "packages",
+    "test",
+    "git-submodules"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ULL-ESIT-DSI-1617/prueba-scapegoat.git"
+  },
   "author": "Casiano Rodriguez-Leon <casiano.rodriguez.leon@gmail.com> (https://github.com/crguezl)",
   "license": "ISC",
   "dependencies": {
