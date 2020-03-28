@@ -4,18 +4,14 @@
   "description": "Testing a published module",
   "main": "index.js",
   "scripts": {
-    "test": "npm run clean && npm run version && mocha",
-    "clean": "rm -fR node_modules package-lock.json && npm run update && npm i --no-save",
+    "test": "npm run clean:update:install && npm run version && mocha",
+    "clean:update:install": "npm run clean:update && npm i --no-save",
+    "clean:update": "npm run clean && npm run update",
+    "clean": "rm -fR node_modules package-lock.json",
     "update": "npm i --no-save @ull-esit-dsi-1617/scapegoat@latest",
     "version": "npm list --depth=0"
   },
-  "keywords": [
-    "ULL",
-    "npm",
-    "packages",
-    "test",
-    "git-submodules"
-  ],
+  "keywords": [ "ULL", "npm", "packages", "test", "git-submodules" ],
   "author": "Casiano Rodriguez-Leon <casiano.rodriguez.leon@gmail.com> (https://github.com/crguezl)",
   "license": "ISC",
   "dependencies": {
