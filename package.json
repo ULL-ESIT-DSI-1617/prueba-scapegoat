@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "npm run clean; npm i --no-save && mocha",
-    "clean": "rm -fR node_modules package-lock.json"
+    "clean": "rm -fR node_modules package-lock.json",
+    "github": "mocha"
   },
   "keywords": [
     "ULL",
