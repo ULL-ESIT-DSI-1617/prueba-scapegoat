@@ -4,7 +4,7 @@
   "description": "Testing a published module",
   "main": "index.js",
   "scripts": {
-    "test": "npm ci && mocha",
+    "test": "npm ci && npm run version && mocha",
     "clean": "rm -fR node_modules package-lock.json",
     "version": "npm list --depth=0"
   },
