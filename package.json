@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "npm ci && mocha",
-    "clean": "rm -fR node_modules package-lock.json"
+    "clean": "rm -fR node_modules package-lock.json",
+    "version": "npm list --depth=0"
   },
   "keywords": [
     "ULL",
@@ -17,7 +18,7 @@
   "author": "Casiano Rodriguez-Leon <casiano.rodriguez.leon@gmail.com> (https://github.com/crguezl)",
   "license": "ISC",
   "dependencies": {
-    "@ull-esit-dsi-1617/scapegoat": "latest",
+    "@ull-esit-dsi-1617/scapegoat": "*",
     "chai": "*",
     "mocha": "*"
   }
