@@ -4,12 +4,13 @@
   "description": "Testing a published module",
   "main": "index.js",
   "scripts": {
-    "test": "npm run clean:update:install && npm run version && mocha",
+    "test": "npm run clean:update:install && npm run versions && mocha",
     "clean:update:install": "npm run clean:update && npm i --no-save",
     "clean:update": "npm run clean && npm run update",
     "clean": "rm -fR node_modules package-lock.json",
+    "sync": "npm version `jq .version ../scapegoat/package.json`",
     "update": "npm i --no-save @ull-esit-dsi-1617/scapegoat@latest",
-    "version": "npm list --depth=0"
+    "versions": "npm list --depth=0"
   },
   "keywords": [
     "ULL",
