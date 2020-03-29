@@ -1,6 +1,6 @@
 {
   "name": "prueba-scapegoat",
-  "version": "1.3.3",
+  "version": "1.3.5",
   "description": "Testing a published module",
   "main": "index.js",
   "scripts": {
