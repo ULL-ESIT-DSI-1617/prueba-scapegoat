@@ -7,7 +7,7 @@
     "test": "npm run clean:update:install && npm run versions && mocha",
     "clean:update:install": "npm run clean:update && npm i --no-save",
     "clean:update": "npm run clean && npm run update",
-    "clean": "rm -fR node_modules package-lock.json",
+    "clean": "rm -fR node_modules/@ull-esit-dsi-1617/* package-lock.json",
     "module-version": "jq .version ../scapegoat/package.json",
     "update": "npm i --no-save @ull-esit-dsi-1617/scapegoat@latest",
     "versions": "npm list --depth=0"
