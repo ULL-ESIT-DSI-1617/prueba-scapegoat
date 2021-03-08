@@ -12,7 +12,13 @@
     "update": "npm i --no-save @ull-esit-dsi-1617/scapegoat@latest",
     "versions": "npm list --depth=0"
   },
-  "keywords": [ "ULL", "npm", "packages", "test", "git-submodules" ],
+  "keywords": [
+    "ULL",
+    "npm",
+    "packages",
+    "test",
+    "git-submodules"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ULL-ESIT-DSI-1617/prueba-scapegoat.git"
