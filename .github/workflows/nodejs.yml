@@ -12,11 +12,11 @@ on: # when this action should be triggered?
 jobs: # jobs are made of steps
   build:
     # Define the OS our workflow should run on
-    runs-on: ubuntu-latest
-
+    runs-on: ${{ matrix.os }}
     strategy:
       # To test across multiple language versions
       matrix:
+        os: [macos-latest, ubuntu-latest ]
         node-version: [12.x]
 
     steps: # See https://github.com/actions/checkout
